@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="A. Trygve Horn">
+    <title>Trygve Horn's Blog - Primer Conclusion</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Space+Mono&display=swap");
+    </style>
+    <link rel="stylesheet" href="src/styles.css" />
+    <script src="src/index.js"></script>
+            <!--function below crashes when called from index.js-->
+            <!-- function passes display width to Blog Features card on load and resize-->
+    <script>
+        function passWinSize() {
+        document.getElementById("displayWidth").innerHTML = window.innerWidth;
+      }
+    </script> 
+  </head>
+  <body onload="passWinSize()" onresize="passWinSize()"> 
+    <div class="navGrid">
+      <div class="logo"><img src="Images/Blog logo.jpg" alt="Logo" /></div>
+      <nav class="nav">
+        <div><a href="#blogFeatures">Blog Features</a></div>
+        <div><a href="#boilerPlate">Boilerplate</a></div>
+        <div><a href="#somethingToSay">Burn Out</a></div>
+        <div><a href="#lastEntry">End</a></div> 
+      </nav>
+    </div>
+    <div class="blogGrid">
+      <nav class="contents">
+        <div><a href="#Top"><p>Top</p></a></div>
+        <div><a href="#blogFeatures"><p>Blog Features</p></a></div>
+        <div><a href="#boilerPlate"><p>Boilerplate</p></a></div>
+        <div><a href="#somethingToSay"><p>Burn Out</p></a></div>
+        <div><a href="#lastEntry"><p>End</p></a></div>
+        <div><p>Section 6</p></div>
+        <div><p>Section 7</p></div>
+        <div><p>Section 8</p></div>
+        <div><p>Section 9</p></div>
+        <div><p>Section 10</p></div>
+        <div><p>Section 11</p></div>
+        <div><p>Section 12</p></div>
+        <div><p>Section 13</p></div>
+        <div><p>Section 14</p></div>
+        <div><p>Section 15</p></div>
+      </nav>
+      <div class="blogCard1" >
+        <span class="landingZone" id="blogFeatures"></span>
+        <h1>Blog Features</h1>
+        <ul>
+          <li>Navbar reorients to column for small/narrow screens (520px)</li>
+          <li>Persistent navigation panels</li>
+          <li>Header partially transparent 
+            <ul><li>65% angle maintains nav bar legibility in column orientation</li></ul>
+          </li>
+          <li>Blog cards have hover shadow effect</li>
+          <li>Anchor links are best demonstrated on narrow displays or windows (ca. 500px)</li>
+            <ul>
+              <li>Current display width: <span id="displayWidth"></span> pixels</li>
+            </ul>
+        </ul>
+      </div>
+      <div class="blogCard2">
+          <span class="landingZone" id="boilerPlate"></span>
+          <h1>Boilerplate Text</h1>
+            <p>Boilerplate text, or simply boilerplate, is any written text that can
+              be reused in new contexts or applications without significant changes
+              to the original.</p> 
+            <p>The term is used in reference to statements,
+              contracts and computer code, and is used in the media to refer to
+              hackneyed or unoriginal writing.</p>
+            <a href="https://en.wikipedia.org/wiki/Boilerplate_text">Wikipedia</a>
+      </div>
+      <div class="blogCard3">
+          <span class="landingZone" id="somethingToSay"></span>
+            <h1>It's better to burn out than to fade away!</h1>
+            <p>Neil Young once wrote, <i>“Rock and roll is here to stay/ it's better to
+              burn out than to fade away.”</i> 
+            <p>Kurt Cobain quoted that line in his suicide note in 1994.</p>  
+            </p>
+            <p>And, of course, in the 'Highlander' church scene, 
+              the Kurgan announced 'I have something to say! 
+              <b>It's better to burn out than to fade away!</b>'</p>
+              <span class="cardLandingZone" id="lastEntry"></span>
+      </div>
+    </div> 
+    <footer class="blogFooter">
+      <div><a href="#Top">Top</a></div>
+      <div><a href="#blogFeatures">Blog Features</a></div>
+      <div><a href="#boilerPlate">Boilerplate</a></div>
+      <div><a href="#somethingToSay">Burn Out</a></div>
+      <div><a href="#lastEntry">End</a></div>
+    </footer>
+  </body>
+</html>
