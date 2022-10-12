@@ -10,14 +10,14 @@
       @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Space+Mono&display=swap");
     </style>
     <link rel="stylesheet" href="src/styles.css" />
-    <script src="src/index.js"></script>
+    <script src="src/index.js" async></script>
             <!--function below crashes when called from index.js-->
             <!-- function passes display width to Blog Features card on load and resize-->
-    <script>
+    <!-- <script>
         function passWinSize() {
         document.getElementById("displayWidth").innerHTML = window.innerWidth;
       }
-    </script> 
+    </script>  -->
   </head>
   <body onload="passWinSize()" onresize="passWinSize()"> 
     <div class="navGrid">
